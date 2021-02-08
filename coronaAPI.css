@@ -1,0 +1,727 @@
+body{
+    background-color: rgba(0, 17, 255, 0.993);
+  }
+  
+.virus{
+  margin: auto;
+
+}
+  .face{
+    background-color: rgb(43, 235, 43);
+    width: 25em;
+    height: 25em;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    margin: auto;
+    
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .leftEye{
+    background-color: black;
+    
+    width: 2.5em;
+    height: 2.5em;
+    
+    position: absolute;
+    top: 0;
+    right: 7em;
+    bottom: 10em;
+    left: 0;
+    
+    margin: auto;
+    border-radius: 50%;
+    
+  }
+  
+  .rightEye{
+    background-color: black;
+    
+    width: 2.5em;
+    height: 2.5em;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 10em;
+    left: 7em;
+    
+    margin: auto;
+    border-radius: 50%;
+    
+  }
+  
+  .nose{
+    background-color: black;
+    
+    width: 2.5em;
+    height: 4.5em;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    margin: auto;
+    border-radius: 50% 50% 20% 20%;
+    
+  }
+  
+  .mouth{
+    background-color: black;
+    
+    width: 9.5em;
+    height: 2.5em;
+    
+    position: absolute;
+    top: 13em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    margin: auto;
+    border-radius: 0 0 100% 100%;
+    
+  }
+
+  .envelopeProtien-1{
+        
+    width: 0;
+    height: 0;
+    border-left: .5em solid transparent;
+    border-right: .5em solid transparent;
+    border-bottom: 1em solid rgba(19, 180, 19, 0.87);
+    
+    position: absolute;
+    top: 25.5em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    margin: auto;
+
+    
+  }
+
+  .envelopeProtien-2{
+    
+    width: 0;
+    height: 0;
+    border-left: .5em solid transparent;
+    border-right: .5em solid transparent;
+    border-top: 1em solid rgba(19, 180, 19, 0.87);
+    
+    position: absolute;
+    top: 0em;
+    right: 0;
+    bottom: 25.5em;
+    left: 0;
+    
+    margin: auto;
+    z-index: -1;
+    
+  }
+
+  .envelopeProtien-3{
+       
+    width: 0;
+    height: 0;
+    border-top: .5em solid transparent;
+    border-bottom: .5em solid transparent;
+    border-left: 1em solid rgba(19, 180, 19, 0.87);
+    
+    position: absolute;
+    top: 0;
+    right: 25.5em;
+    bottom: 0;
+    left: 0;
+    
+    margin: auto;
+  }
+
+  .envelopeProtien-4{
+    width: 0;
+    height: 0;
+    border-top: .5em solid transparent;
+    border-bottom: .5em solid transparent;
+    border-right: 1em solid rgba(19, 180, 19, 0.87);
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 25.5em;
+    
+    margin: auto;
+    
+  }  
+
+  .envelopeProtien-5{
+    width: 0;
+    height: 0;
+    border-right: 1em solid transparent;
+    border-bottom: 1em solid rgba(19, 180, 19, 0.87);
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 17em;
+    left: 20em;
+    
+    margin: auto;
+    
+  }  
+
+  .envelopeProtien-6{
+    width: 0;
+    height: 0;
+    border-left: 1em solid transparent;
+    border-top: 1em solid rgba(19, 180, 19, 0.87);
+    
+    
+    position: absolute;
+    top: 17em;
+    right: 20em;
+    bottom: 0;
+    left: 0;
+    
+    margin: auto;
+    
+  }  
+
+  .envelopeProtien-7{
+    width: 0;
+    height: 0;
+    border-right: 1em solid transparent;
+    border-top: 1em solid rgba(19, 180, 19, 0.87);
+    
+    position: absolute;
+    top: 20em;
+    right: 0;
+    bottom: 0;
+    left: 17em;
+    
+    margin: auto;
+    
+  }  
+
+  .envelopeProtien-8{
+    width: 0;
+    height: 0;
+    border-left: 1em solid transparent;
+    border-bottom: 1em solid rgba(19, 180, 19, 0.87);
+    
+    position: absolute;
+    top: 0;
+    right: 17em;
+    bottom: 20em;
+    left: 0;
+    
+    margin: auto;
+    z-index: -1;
+    
+  }  
+
+  .envelopeProtien-9{
+    background-color: rgba(19, 180, 19, 0.87);
+    
+    height: 1em;
+    width: 1em;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 4em;
+    right: 15em;
+
+    margin: auto;
+
+    border-radius: 50%;
+    box-shadow: -.05em -.0075em .5em black;
+}
+
+.envelopeProtien-10{
+    background-color: rgba(19, 180, 19, 0.87);
+    
+    height: 1em;
+    width: 1em;
+
+    position: absolute;
+    top: 7em;
+    left: 10em;
+    bottom:0;
+    right: 0;
+
+    margin: auto;
+
+    border-radius: 50%;
+    box-shadow: -.05em -.0075em .5em black;
+}
+
+.envelopeProtien-11{
+    background-color: rgba(19, 180, 19, 0.87);
+    
+    height: 1em;
+    width: 1em;
+
+    position: absolute;
+    top: 17em;
+    left: 12em;
+    bottom:0;
+    right: 0;
+
+    margin: auto;
+
+    border-radius: 50%;
+    box-shadow: -.05em -.0075em .5em black;
+}
+
+body{
+  background-color: lightblue;
+}
+
+.face{
+  background-color: rgb(43, 235, 43);
+  width: 25em;
+  height: 25em;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  margin: auto;
+  
+  border-radius: 50%;
+}
+
+.leftEye{
+  background-color: black;
+  
+  width: 2.5em;
+  height: 2.5em;
+  
+  position: absolute;
+  top: 0;
+  right: 7em;
+  bottom: 10em;
+  left: 0;
+  
+  margin: auto;
+  border-radius: 50%;
+  
+}
+
+.rightEye{
+  background-color: black;
+  
+  width: 2.5em;
+  height: 2.5em;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 10em;
+  left: 7em;
+  
+  margin: auto;
+  border-radius: 50%;
+  
+}
+
+.nose{
+  background-color: black;
+  
+  width: 2.5em;
+  height: 4.5em;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  margin: auto;
+  border-radius: 50% 50% 20% 20%;
+  
+}
+
+.mouth{
+  background-color: black;
+  
+  width: 9.5em;
+  height: 2.5em;
+  
+  position: absolute;
+  top: 13em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  margin: auto;
+  border-radius: 0 0 100% 100%;
+  
+}
+
+.envelopeProtien-1{
+      
+  width: 0;
+  height: 0;
+  border-left: .5em solid transparent;
+  border-right: .5em solid transparent;
+  border-bottom: 1em solid rgba(19, 180, 19, 0.87);
+  
+  position: absolute;
+  top: 25.5em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  margin: auto;
+
+}
+
+.envelopeProtien-2{
+  
+  width: 0;
+  height: 0;
+  border-left: .5em solid transparent;
+  border-right: .5em solid transparent;
+  border-top: 1em solid rgba(19, 180, 19, 0.87);
+  
+  position: absolute;
+  top: 0em;
+  right: 0;
+  bottom: 25.5em;
+  left: 0;
+  
+  margin: auto;
+  
+}
+
+.envelopeProtien-3{
+     
+  width: 0;
+  height: 0;
+  border-top: .5em solid transparent;
+  border-bottom: .5em solid transparent;
+  border-left: 1em solid rgba(19, 180, 19, 0.87);
+  
+  position: absolute;
+  top: 0;
+  right: 25.5em;
+  bottom: 0;
+  left: 0;
+  
+  margin: auto;
+}
+
+.envelopeProtien-4{
+  width: 0;
+  height: 0;
+  border-top: .5em solid transparent;
+  border-bottom: .5em solid transparent;
+  border-right: 1em solid rgba(19, 180, 19, 0.87);
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 25.5em;
+  
+  margin: auto;
+  
+}  
+
+.envelopeProtien-5{
+  width: 0;
+  height: 0;
+  border-right: 1em solid transparent;
+  border-bottom: 1em solid rgba(19, 180, 19, 0.87);
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 17em;
+  left: 20em;
+  
+  margin: auto;
+  
+}  
+
+.envelopeProtien-6{
+  width: 0;
+  height: 0;
+  border-left: 1em solid transparent;
+  border-top: 1em solid rgba(19, 180, 19, 0.87);
+  
+  
+  position: absolute;
+  top: 17em;
+  right: 20em;
+  bottom: 0;
+  left: 0;
+  
+  margin: auto;
+  
+}  
+
+.envelopeProtien-7{
+  width: 0;
+  height: 0;
+  border-right: 1em solid transparent;
+  border-top: 1em solid rgba(19, 180, 19, 0.87);
+  
+  position: absolute;
+  top: 20em;
+  right: 0;
+  bottom: 0;
+  left: 17em;
+  
+  margin: auto;
+  
+}  
+
+.envelopeProtien-8{
+  width: 0;
+  height: 0;
+  border-left: 1em solid transparent;
+  border-bottom: 1em solid rgba(19, 180, 19, 0.87);
+  
+  position: absolute;
+  top: 0;
+  right: 17em;
+  bottom: 20em;
+  left: 0;
+  
+  margin: auto;
+  
+}  
+
+.envelopeProtien-9{
+  background-color: rgba(19, 180, 19, 0.87);
+  
+  height: 1em;
+  width: 1em;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 5em;
+  right: 15em;
+
+  margin: auto;
+
+  border-radius: 50%;
+  box-shadow: -.05em -.0075em .5em black;
+}
+
+.envelopeProtien-10{
+  background-color: rgba(19, 180, 19, 0.87);
+  
+  height: 1em;
+  width: 1em;
+
+  position: absolute;
+  top: 8em;
+  left: 10em;
+  bottom:0;
+  right: 0;
+
+  margin: auto;
+
+  border-radius: 50%;
+  box-shadow: -.05em -.0075em .5em black;
+}
+
+.envelopeProtien-11{
+  background-color: rgba(19, 180, 19, 0.87);
+  
+  height: 1em;
+  width: 1em;
+
+  position: absolute;
+  top: 17em;
+  left: 12em;
+  bottom:0;
+  right: 0;
+
+  margin: auto;
+
+  border-radius: 50%;
+  box-shadow: -.05em -.0075em .5em black;
+}
+
+.envelopeProtien-12{
+  background-color: rgba(19, 180, 19, 0.87);
+  
+  height: 1em;
+  width: 1em;
+
+  position: absolute;
+  top: 4em;
+  left: 0;
+  bottom: 0;
+  right: 10em;
+
+  margin: auto;
+
+  border-radius: 50%;
+  box-shadow: -.05em -.0075em .5em black;
+}
+
+.envelopeProtien-13{
+  background-color: rgba(19, 180, 19, 0.87);
+  
+  height: 1em;
+  width: 1em;
+
+  position: absolute;
+  top: 0;
+  left: 12em;
+  bottom: 15em;
+  right: 0;
+
+  margin: auto;
+
+  border-radius: 50%;
+  box-shadow: -.05em -.0075em .5em black;
+}
+
+.envelopeProtien-14{
+  background-color: rgba(19, 180, 19, 0.87);
+  
+  height: 1em;
+  width: 1em;
+
+  position: absolute;
+  top: 10em;
+  left: 0;
+  bottom: 0;
+  right: 17em;
+
+  margin: auto;
+
+  border-radius: 50%;
+  box-shadow: -.05em -.0075em .5em black;
+}
+
+.envelopeProtien-15{
+  background-color: rgba(19, 180, 19, 0.87);
+  
+  height: 1em;
+  width: 1em;
+
+  position: absolute;
+  top: 0;
+  left: 16em;
+  bottom: 0;
+  right: 0;
+
+  margin: auto;
+
+  border-radius: 50%;
+  box-shadow: -.05em -.0075em .5em black;
+}
+
+.envelopeProtien-16{
+  background-color: rgba(19, 180, 19, 0.87);
+  
+  height: 1em;
+  width: 1em;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 15em;
+  right: 10em;
+
+  margin: auto;
+
+  border-radius: 50%;
+  box-shadow: -.05em -.0075em .5em black;
+}
+
+.envelopeProtien-17{
+  background-color: rgba(19, 180, 19, 0.87);
+  
+  height: 1em;
+  width: 1em;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 17em;
+  right: 0;
+
+  margin: auto;
+
+  border-radius: 50%;
+  box-shadow: -.05em -.0075em .5em black;
+}
+
+.envelopeProtien-18{
+  background-color: rgba(19, 180, 19, 0.87);
+  
+  height: 1em;
+  width: 1em;
+
+  position: absolute;
+  top: 21em;
+  left: 0;
+  bottom: 0;
+  right: 6em;
+
+  margin: auto;
+
+  border-radius: 50%;
+  box-shadow: -.05em -.0075em .5em black;
+}
+
+.sun-0 {
+
+  background-color: rgb(253, 253, 1);
+
+  height: 10em;
+  width: 10em;
+
+  position: absolute;
+  top: 0;
+  right: 60em;
+  bottom: 20em;
+  left: 0;
+
+  margin: auto;
+
+  border-radius: 50%;
+  z-index: -2;
+}
+
+
+
+.selectResults {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-content: flex-end;
+
+  z-index: 4;
+}
+
+.countriesList {
+  flex: 1;
+}
+.results {
+  flex: 2;
+}
+.resultsDisplay {
+  flex: 3;
+}
