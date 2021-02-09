@@ -1,25 +1,32 @@
-const homeURL = "https://api.covid19api.com/";
+const homeURL = "https://api.covid19api.com";
 const baseURL = "https://api.covid19api.com/summary";
 
+// const options = {
+//     method: 'GET',
+//     mode: 'no-cors'
+//   };
 
 // X-Request-Id: 5cf9dfd5-3449-485e-b5ae-70a60e997864
 
              // key notation will differ from api to api look at api docs 
              //first parameter in our url will always start with a ? 
              //may need to add more depending on api - starts with ?
-// fetch (`${baseURL}`)
-//     .then(response => response.json())
-//     .then(json => console.log(json));
 
 // fetch('https://api.covid19api.com/auth/access_token', {"Email": "gpmckelvey@gmail.com", "Subscription":"basic"}, {method: "POST"})
 // .then(response => response.json())
 //     .then(json => console.log(json));
 
-fetch (`${baseURL}`)
+fetch (`${baseURL}`, {
+    method: 'GET',
+    headers: {
+        "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+      }
+  
+  })
     .then(response => response.json())
     .then(json => {            
         let option;
-        console.log(json["Countries"][0].Country);
+        //console.log(json["Countries"][0].Country);
             for (let i = 0; i < json["Countries"].length; i++) {
               option = document.createElement('option');
                 option.text = json["Countries"][i].Country;
@@ -37,20 +44,27 @@ fetch (`${baseURL}`)
     dropdown.add(defaultOption);
     dropdown.selectedIndex = 0;
     
- 
+    let today = new Date();
 dropdown.addEventListener("change", function (selectCountry){
 
     console.log(selectCountry.target.value);
-    fetch (`https://api.covid19api.com/country/${selectCountry.target.value}/status/confirmed?from=2021-02-07T00:00:00Z&to=2021-02-08T00:00:00Z`)
+    fetch (`${homeURL}/country/${selectCountry.target.value}/status/confirmed?from=2020-03-01T00:00:00Z&to=${today}`, {
+        method: 'GET',
+        headers: {
+            "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+          }
+      
+      })
     .then(response => response.json())
     .then(json => {
-        //console.log(json);
-        let caseResult = json[1].Cases;
-        console.log(caseResult);
-           
+        console.log(json);
+        let caseResult = json;
+        //console.log(caseResult);
+        let lastIndex = caseResult[caseResult.length - 1].Cases;
+        console.log(lastIndex);
             let resultsDisplay = document.getElementById("resultsDisplay");
             let para = document.createElement("p");
-            para.textContent = caseResult;
+            para.textContent = lastIndex;
             resultsDisplay.appendChild(para);
             
          
