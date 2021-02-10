@@ -723,7 +723,7 @@ body{
 
 .countriesList {
   order: 1;
-  flex-shrink: 1;
+  flex-shrink: 5;
 }
 .results {
   order: 2;

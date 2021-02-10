@@ -48,13 +48,19 @@ fetch (`${baseURL}`, requestOptions)
     
     let today = new Date();
 dropdown.addEventListener("change", function (selectCountry){
-    // if (selectCountry.target.value === "united-states") {
-    //     let hotMess = "The US is a hot mess. Data unavailable"
-    //     let resultsDisplay = document.getElementById("resultsDisplay");
-    //         let para = document.createElement("p");
-    //         para.textContent = hotMess;
-    //         resultsDisplay.appendChild(para);
-    // } else {}
+    if (selectCountry.target.value == "united-states") {
+        //alert("The US is overwhelmed with cases at the moment and accurate data is not available.")
+        let hotMess = "The US is overwhelmed with cases at the moment and accurate data is not available. In other words, the US is a hot mess.";
+        let resultsDisplay = document.getElementById("resultsDisplay");
+            let para = document.createElement("p");
+            para.textContent = hotMess;
+             if (resultsDisplay.firstChild){ 
+                resultsDisplay.removeChild(resultsDisplay.firstChild); 
+            }
+            resultsDisplay.appendChild(para);
+            console.log("condition met");
+           
+    } else {
 
     //console.log(selectCountry.target.value);
     fetch (`${homeURL}/country/${selectCountry.target.value}/status/confirmed?from=2020-03-01T00:00:00Z&to=${today}`, requestOptions)
@@ -72,8 +78,9 @@ dropdown.addEventListener("change", function (selectCountry){
             
          
         }).catch(error => console.log("error", error));
-        while (resultsDisplay.firstChild){ 
+        if (resultsDisplay.firstChild){ 
             resultsDisplay.removeChild(resultsDisplay.firstChild); 
         }
+    }
 });
 
