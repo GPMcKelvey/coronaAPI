@@ -306,6 +306,7 @@ body{
   margin: auto;
   
   border-radius: 50%;
+  z-index: -4;
 }
 
 .leftEye{
@@ -527,6 +528,7 @@ body{
 
   border-radius: 50%;
   box-shadow: -.05em -.0075em .5em black;
+  z-index: -2;
 }
 
 .envelopeProtien-10{
@@ -599,6 +601,7 @@ body{
 
   border-radius: 50%;
   box-shadow: -.05em -.0075em .5em black;
+  z-index: -2;
 }
 
 .envelopeProtien-14{
@@ -653,6 +656,7 @@ body{
 
   border-radius: 50%;
   box-shadow: -.05em -.0075em .5em black;
+  z-index: -2;
 }
 
 .envelopeProtien-17{
@@ -671,6 +675,7 @@ body{
 
   border-radius: 50%;
   box-shadow: -.05em -.0075em .5em black;
+  z-index: -2;
 }
 
 .envelopeProtien-18{
@@ -689,6 +694,7 @@ body{
 
   border-radius: 50%;
   box-shadow: -.05em -.0075em .5em black;
+  z-index: -2;
 }
 
 .sun-0 {
@@ -713,6 +719,7 @@ body{
 
 
 .selectResults {
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content:center;
