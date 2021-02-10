@@ -2,6 +2,11 @@ body{
     background-color: rgba(0, 17, 255, 0.993);
   }
   
+  p {
+    font-weight: bold;
+    font-size: 48px;
+    text-align: right;
+  }
 .virus{
   margin: auto;
 
@@ -717,11 +722,12 @@ body{
 }
 
 .countriesList {
-  flex: 1;
+  order: 1;
+  flex-shrink: 1;
 }
 .results {
-  flex: 2;
+  order: 2;
 }
 .resultsDisplay {
-  flex: 3;
+  order: 3;
 }
